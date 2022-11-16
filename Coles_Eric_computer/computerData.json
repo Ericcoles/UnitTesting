@@ -1,0 +1,77 @@
+[
+  {
+    "number": 1,
+    "name": "Beast II",
+    "processor": "Selenium II",
+    "price": 300,
+    "memory": 16,
+    "accessories": ["Super fan", "cleaning set", "coffee cup holder"],
+    "info": {
+      "model": "XL",
+      "notes": "high quality",
+      "energyclass": "D"
+    }
+  },
+  {
+    "number": 2,
+    "name": "Beast III",
+    "processor": "MotorOlè",
+    "price": 123,
+    "memory": 1,
+    "accessories": ["Super fan", "Cooling system", "super power supply"],
+    "info": {
+      "model": "GT",
+      "notes": "no comments",
+      "energyclass": "C"
+    }
+  },
+  {
+    "number": 3,
+    "name": "King 3000",
+    "processor": "Selenium II",
+    "price": 200,
+    "memory": 2,
+    "accessories": ["super power supply", "Super fan", "coffee cup holder"],
+    "info": {
+      "model": "GT",
+      "notes": "no comments",
+      "energyclass": "A"
+    }
+  },
+  {
+    "number": 4,
+    "name": "BigFlop Mark II",
+    "processor": "MotorOlè",
+    "price": 25,
+    "memory": 16,
+    "accessories": ["coffee cup holder", "super power supply", "Super fan"],
+    "info": {
+      "model": "XL",
+      "notes": "no comments",
+      "energyclass": "C"
+    }
+  },
+  {
+    "number": 5,
+    "name": "MaxEffect 2000",
+    "processor": "PiTron 3",
+    "price": 25,
+    "memory": 32,
+    "accessories": ["Cooling system", "super power supply", "Super fan"]
+  },
+  {
+    "number": 6,
+    "name": "MaxEffect 3000",
+    "processor": "PiTron 3",
+    "price": 26,
+    "memory": 33,
+    "accessories": []
+  },
+  {
+    "number": 7,
+    "name": "MaxEffect 4000",
+    "processor": "PiTron 3",
+    "price": 28,
+    "memory": 34
+  }
+]

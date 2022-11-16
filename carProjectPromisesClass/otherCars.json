@@ -1,0 +1,6 @@
+[
+  { "model": "T-model", "licence": "ABC-1" },
+  { "model": "Novax", "licence": "XYZ-987" },
+  { "model": "T-model", "licence": "GTF-100" },
+  { "model": "GTX-1", "licence": "B-12" }
+]

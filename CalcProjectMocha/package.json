@@ -1,0 +1,15 @@
+{
+  "name": "calcprojectmocha",
+  "description": "```shell npm install mocha chai --save-dev ```",
+  "version": "1.0.0",
+  "main": "calclibrary.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
