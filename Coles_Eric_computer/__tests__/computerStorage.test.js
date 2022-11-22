@@ -189,18 +189,75 @@ describe("Test Cases for get_a_computer_matching_number(searchKey)", () => {
   });
 });
 
-### **get_total_price_of_computers_by_processor(searchValue)**
+// ### **get_total_price_of_computers_by_processor(searchValue)**
+describe("Test Cases for get_total_price_of_computers_by_processor(searchValue)", () => {
+  const computerStorage = new ComputerStorage(computers);
 
-returns the total price of all computers that have the same processor than the given searchValue
+  test("Test 1: If a parameter searchValue is the processor of the computer to be searched, returns the total price of all computers that have the same processor than the given searchValue.", () => {
+    const expectedValue = [
+      {
+        number: 1,
+        name: "Beast II",
+        processor: "Selenium II",
+        price: 300,
+        memory: 16,
+        accessories: ["Super fan", "cleaning set", "coffee cup holder"],
+        info: {
+          model: "XL",
+          notes: "high quality",
+          energyclass: "D",
+        },
+      },
+      {
+        number: 2,
+        name: "Beast III",
+        processor: "MotorOlè",
+        price: 123,
+        memory: 1,
+        accessories: ["Super fan", "Cooling system", "super power supply"],
+        info: {
+          model: "GT",
+          notes: "no comments",
+          energyclass: "C",
+        },
+      },
+      {
+        number: 4,
+        name: "BigFlop Mark II",
+        processor: "MotorOlè",
+        price: 25,
+        memory: 16,
+        accessories: ["coffee cup holder", "super power supply", "Super fan"],
+        info: {
+          model: "XL",
+          notes: "no comments",
+          energyclass: "C",
+        },
+      },
+      {
+        number: 6,
+        name: "MaxEffect 3000",
+        processor: "PiTron 3",
+        price: 26,
+        memory: 33,
+        accessories: [],
+      },
+    ];
+    expect(
+      computerStorage.get_total_price_of_computers_by_processor("MotorOlè")
+    ).toEqual(148);
+  });
+  //if no computer with the given searchValue is found throws an exeption `'nothing found with given'`. If a parameter searchValue is missing, an exeption `'missing parameter'` is thrown
 
-> Parameters:
->
-> > searchValue is the processor of the computer to be searched
+  test("Test 2: If no computer with the given searchValue is found throws an exeption 'nothing found with given'", () => {
+    expect(() =>
+      computerStorage.get_total_price_of_computers_by_processor("mosstorchfire")
+    ).toThrow("nothing found with given");
+  });
 
-> Returns:
->
-> > total cumulative price of computers matching the searchValue
-
-> Throws:
->
-> > if no computer with the given searchValue is found throws an exeption `'nothing found with given'`. If a parameter searchValue is missing, an exeption `'missing parameter'` is thrown
+  test("Test 3: missing parameter throws an exception: 'missing parameter'", () => {
+    expect(() =>
+      computerStorage.get_total_price_of_computers_by_processor()
+    ).toThrow("missing parameter");
+  });
+});
